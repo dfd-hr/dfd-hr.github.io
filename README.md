@@ -1,6 +1,6 @@
 # RefTeacher
 
-This is the repository that contains source code for the [RefTeacher website](https://refteacher.github.io).
+This is the repository that contains source code for the [DFD-HR website](https://dfd-hr.github.io).
 
 <!--
 If you find Nerfies useful for your work please cite:
@@ -15,7 +15,7 @@ If you find Nerfies useful for your work please cite:
 -->
 
 <p align="center">
-	<img src="./static/images/RefTeacher.jpg" width="800">
+	<img src="./static/images/dfd-hr.png" width="800">
 </p>
 
 # Website License
