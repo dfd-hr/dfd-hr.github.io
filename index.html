@@ -84,7 +84,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Sun_RefTeacher_A_Strong_Baseline_for_Semi-Supervised_Referring_Expression_Comprehension_CVPR_2023_paper.pdf"
+                <a href="https://openreview.net/pdf?id=obg4C68llO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -131,36 +131,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Referring expression comprehension (REC) aims to locate
-            the target instance in an image according to a given
-            natural language expression. Existing REC approaches often
-            require a large number of instance-level annotations for
-            fully supervised learning, which are laborious and expensive.
-            In this paper, we present the first attempt of semi-supervised
-            learning for REC and propose a strong baseline
-            method called RefTeacher. Inspired by the recent progress
-            in computer vision, RefTeacher adopts a teacher-student
-            learning paradigm, where the teacher REC network predicts
-            pseudo-labels for optimizing the student one. This
-            paradigm allows REC models to exploit massive unlabeled
-            data based on a small fraction of labeled information,
-            greatly reducing the annotation costs. In particular, we
-            also identify two key challenges in semi-supervised REC,
-            namely, sparse supervision signals and worse pseudo-label
-            noise. To address these issues, we equip RefTeacher with
-            two novel designs called Attention-based Imitation Learning
-            (AIL) and Adaptive Pseudo-label Weighting (APW). AIL
-            can help the student network imitate the recognition behaviors
-            of the teacher, thereby obtaining sufficient supervision
-            signals. APW can help the model adaptively adjust
-            the contributions of pseudo-labels with varying qualities,
-            thus avoiding confirmation bias. To validate RefTeacher,
-            we conduct extensive experiments on three REC benchmark
-            datasets. Experimental results show that RefTeacher obtains
-            obvious gains over the fully supervised methods. More
-            importantly, using only 10% labeled data, our approach allows
-            the model to achieve near 100% fully supervised performance,
-            e.g., only -2.78% on RefCOCO.
+            Developing generalizable deepfake detectors has become increasingly important with the rapid advancement of generative
+            models. Adapting visual foundation models (VFMs), e.g., CLIP, through parameter-efficient finetuning (PEFT), with only a
+            small subset of parameters updated, has been proven highly effective for generalizable detection. However, the success
+            of “fewer-parameters” training raises an important question: although only a few parameters are tuned, have existing
+            PEFT-based detectors truly exploited the most informative ones while eliminating redundant parameters for better
+            generalization? In this work, we move beyond standard PEFT by proposing a joint optimization strategy that operates at
+            both the layer and token levels. Since latent features across layers capture different semantic abstractions and tokens
+            within the same layer convey varied forgery cues, we propose integrating both layer-level and token-level routing to
+            maximize representational synergy. Specifically, at the layer level, we introduce "Early Layer Pruning", an adaptive
+            truncation mechanism that enables the model to adaptively learn distinct forward depths for different types of
+            instances. At the token level, "Token Selection" is guided by the Spearman rank loss to filter tokens irrelevant to
+            forgery learning, enabling the model to focus on the most discriminative cues. Furthermore, a unified MoE architecture
+            is applied that encourages diversity and thus reduces the potential model's overfitting to specific forgery types.
+            Extensive benchmarking results demonstrate the effectiveness of our designs and show the superior performance of our
+            method over existing state-of-the-arts.
           </p>
         </div>
       </div>
@@ -203,7 +188,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/RefTeacher_paper.pdf">
+         href="./static/videos/dfd-hr_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/Disguiser15" class="external-link" disabled>
